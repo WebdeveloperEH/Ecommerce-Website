@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dagon Almacén del Este - Réplica</title>
+    <link rel="stylesheet" href="assetes/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+   <!-- Background (liquors) -->
+   <div class="hero-bg" aria-hidden="true"></div>
+
+   <!-- Header -->
+   <header class="header" id="header">
+     <div class="nav-wrap">
+       <a class="brand" href="#">
+         <!-- Left logo image -->
+         <img src="assetes/image/Logo.png" alt="Dominican Republic Liquors Logo" />
+         <!-- <span class="brand-title">
+           <span class="top">Dominican Republic Liquors</span>
+           <span class="sub">Dagon Almacén del Este</span>
+         </span> -->
+       </a>
+ 
+       <nav class="nav" aria-label="Primary">
+         <a href="#productos">Productos</a>
+         <a href="#venta">Venta Inteligente</a>
+         <a href="#ofertas">Ofertas</a>
+         <a href="#contacto">Contacto</a>
+       </nav>
+ 
+       <div class="cta">
+         <button class="btn btn-outline" type="button">Claim My Discount</button>
+         <div class="cart" aria-label="Carrito">
+           <!-- simple cart icon -->
+           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+             <path d="M6 6h15l-2 9H8L6 6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+             <circle cx="9" cy="20" r="1.8" fill="currentColor"/>
+             <circle cx="18" cy="20" r="1.8" fill="currentColor"/>
+           </svg>
+         </div>
+         <!-- Mobile toggles -->
+         <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+           <span class="bar"></span>
+         </button>
+         <button class="close-x" id="closeX" aria-label="Cerrar menú">✕</button>
+       </div>
+     </div>
+ 
+     <!-- Mobile panel (designed following "small.png" guidance) -->
+     <div class="mobile-panel" id="mobilePanel">
+       <a class="mobile-link" href="#productos">
+         <span>Productos</span> <span>›</span>
+       </a>
+       <a class="mobile-link" href="#venta">
+         <span>Venta Inteligente</span> <span>›</span>
+       </a>
+       <a class="mobile-link" href="#ofertas">
+         <span>Ofertas</span> <span>›</span>
+       </a>
+       <a class="mobile-link" href="#contacto">
+         <span>Contacto</span> <span>›</span>
+       </a>
+       <div class="mobile-actions">
+         <button class="btn btn-discount" type="button">Claim My Discount</button>
+         <button class="btn btn-ai" type="button">Venta Inteligente AI</button>
+       </div>
+     </div>
+   </header>
+ 
+   <!-- Hero -->
+   <section  class="hero">
+     <div class="hero-content">
+       <span class="kicker">Los Mejores Licores del Caribe</span>
+       <h1 class="title">Bienvenido a Dagon Almacén del Este</h1>
+       <p class="subtitle">
+         Explora una selección premium de rones, whiskies, vinos y cervezas. Todo lo que necesitas para tus celebraciones, en un solo lugar.
+       </p>
+       <div class="actions">
+         <a class="btn btn-primary" href="#productos">Explorar Productos</a>
+         <button class="btn btn-ai" type="button">Venta Inteligente AI</button>
+       </div>
+     </div>
+ 
+     <!-- Left-side form -->
+     <form class="hero-form" aria-label="Consulta rápida">
+       <h3 class="form-title">Consulta rápida</h3>
+ 
+       <div class="form-row">
+         <div class="field">
+           <label class="label" for="name">Nombre completo</label>
+           <input class="input" id="name" name="name" type="text" placeholder="Tu nombre" required />
+         </div>
+         <div class="field">
+           <label class="label" for="email">Correo electrónico</label>
+           <input class="input" id="email" name="email" type="email" placeholder="tucorreo@dominio.com" required />
+         </div>
+       </div>
+ 
+       <div class="form-row">
+         <div class="field">
+           <label class="label" for="phone">Teléfono</label>
+           <input class="input" id="phone" name="phone" type="tel" placeholder="+1 (809) 000-0000" />
+         </div>
+         <div class="field select-wrap">
+           <label class="label" for="program">Program of interest</label>
+           <!-- Dropdown menu -->
+           <select class="select" id="program" name="program" required>
+             <option value="" disabled selected>Selecciona una opción</option>
+             <option value="rum">Ron premium</option>
+             <option value="whisky">Whisky escocés</option>
+             <option value="wine">Vinos reserva</option>
+             <option value="beer">Cervezas artesanales</option>
+             <option value="bundle">Paquetes para eventos</option>
+           </select>
+         </div>
+       </div>
+ 
+       <div class="field">
+         <label class="label" for="message">Mensaje</label>
+         <textarea class="textarea" id="message" name="message" placeholder="Cuéntanos lo que buscas…"></textarea>
+       </div>
+ 
+       <div class="form-actions">
+         <button class="btn btn-submit" type="submit">Enviar consulta</button>
+         <span class="form-note">Nos pondremos en contacto muy pronto.</span>
+       </div>
+     </form>
+   </section>
+ 
+   <!-- Offers strip -->
+   <div class="strip" id="ofertas">
+     <div class="pill"><span class="dot"></span> <span>Descuentos de temporada</span></div>
+     <div class="pill"><span class="dot"></span> <span>Envío rápido a todo el Este</span></div>
+     <div class="pill"><span class="dot"></span> <span>Selección premium garantizada</span></div>
+   </div>
+  
+
+    <!-- <header class="header">
+        <div class="logo-container">
+            <div class="logo">
+              <img src="assetes/image/Logo.png" alt="Logo">
+               
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Venta Inteligente</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <div class="language-selector">
+                <span class="active">ES</span> | <span>EN</span>
+            </div>
+            <button class="cart-btn"><i class="fas fa-shopping-cart"></i></button>
+            <button class="claim-btn">Claim My Discount</button>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <p class="pre-heading"><i class="fas fa-star"></i> Los Mejores Licores del Caribe</p>
+            <h1 class="main-title">Bienvenido a *Dagon* <br>Almacén del Este</h1>
+            <p class="sub-text">Explora una selección premium de rones, whiskies, vinos y cervezas. <br>Todo lo que necesitas para tus celebraciones, en un solo lugar.</p>
+
+            <div class="action-buttons">
+                <a href="#" class="btn btn-explore">Explorar Productos <i class="fas fa-arrow-right"></i></a>
+                <a href="#" class="btn btn-ai"><i class="fas fa-microchip"></i> Venta Inteligente AI</a>
+            </div>
+
+            <div class="info-line">
+                <span>Entrega rápida en República Dominicana</span>
+                <span>Productos auténticos garantizados</span>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Section 2 start -->  
+     <!-- Featured Products Section -->
+<section class="featured-products" id="productos-destacados">
+    <div class="container1">
+        <section class="featured-section1">
+            <div class="header1">
+              <h2>Nuestros Productos Destacados</h2>
+              <p>Descubre nuestra selección premium de licores del Caribe y del mundo.</p>
+            </div>
+          </section>
+          
+  
+      <!-- Filters -->
+      <div class="filters" role="tablist" aria-label="Filtrar por categoría">
+        <button class="filter-btn active" data-filter="todos" aria-selected="true">Todos</button>
+        <button class="filter-btn" data-filter="ron">Ron</button>
+        <button class="filter-btn" data-filter="whisky">Whisky</button>
+        <button class="filter-btn" data-filter="vino">Vino</button>
+        <button class="filter-btn" data-filter="cerveza">Cerveza</button>
+      </div>
+  
+      <!-- Grid -->
+      <div class="product-grid">
+        <!-- Card 1 -->
+        <article class="product-card" data-category="vino">
+          <div class="image-wrap">
+            <img src="assetes/image/hero1.png" alt="Vino Premium Selection" />
+            <span class="badge badge-accent">Best seller</span>
+          </div>
+          <div class="content">
+            <h3 class="title">Vino Premium Selection</h3>
+            <div class="rating">
+              <span class="stars" aria-label="5 de 5 estrellas">★★★★★</span>
+              <span class="reviews">(50)</span>
+            </div>
+            <div class="price">RDS 1,800 <i class="fa-solid fa-cart-plus"></i></div>
+          </div>
+        </article>
+  
+        <!-- Card 2 -->
+        <article class="product-card" data-category="ron">
+          <div class="image-wrap">
+            <img src="assetes/image/img1.png" alt="Ron Añejo Premium" />
+          </div>
+          <div class="content">
+            <h3 class="title">Ron Añejo Premium</h3>
+            <div class="rating">
+              <span class="stars" aria-label="5 de 5 estrellas">★★★★★</span>
+              <span class="reviews">(28)</span>
+            </div>
+            <div class="price">RDS 2,200 <i class="fa-solid fa-cart-plus"></i></div>
+          </div>
+        </article>
+  
+        <!-- Card 3 -->
+        <article class="product-card" data-category="whisky">
+          <div class="image-wrap">
+            <img src="assetes/image/imge.jpg" alt="Whisky Single Malt" />
+            <span class="badge badge-new">Nuevo</span>
+          </div>
+          <div class="content">
+            <h3 class="title">Whisky Single Malt</h3>
+            <div class="rating">
+              <span class="stars" aria-label="5 de 5 estrellas">★★★★★</span>
+              <span class="reviews">(35)</span>
+            </div>
+            <div class="price">RDS 3,500 <i class="fa-solid fa-cart-plus"></i></div>
+          </div>
+        </article>
+  
+        <!-- Card 4 -->
+        <article class="product-card" data-category="coleccion ron whisky vino cerveza">
+          <div class="image-wrap">
+            <img src="assetes/image/imge1.png" alt="Colección Celebración" />
+          </div>
+          <div class="content">
+            <h3 class="title">Colección Celebración</h3>
+            <div class="rating">
+              <span class="stars" aria-label="5 de 5 estrellas">★★★★★</span>
+              <span class="reviews">(40)</span>
+            </div>
+            <div class="price">RDS 2,850 <i class="fa-solid fa-cart-plus"></i></div>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="product-card" data-category="coleccion ron whisky vino cerveza">
+            <div class="image-wrap">
+              <img src="assetes/image/img4.jpg" alt="Colección Celebración" />
+            </div>
+            <div class="content">
+              <h3 class="title">Colección Celebración</h3>
+              <div class="rating">
+                <span class="stars" aria-label="5 de 5 estrellas">★★★★★</span>
+                <span class="reviews">(40)</span>
+              </div>
+              <div class="price">RDS 2,850 <i class="fa-solid fa-cart-plus"></i></div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+        <article class="product-card" data-category="coleccion ron whisky vino cerveza">
+            <div class="image-wrap">
+              <img src="assetes/image/img1.png" alt="Colección Celebración" />
+            </div>
+            <div class="content">
+              <h3 class="title">Colección Celebración</h3>
+              <div class="rating">
+                <span class="stars" aria-label="5 de 5 estrellas">★★★★★</span>
+                <span class="reviews">(40)</span>
+              </div>
+              <div class="price">RDS 2,850 <i class="fa-solid fa-cart-plus"></i></div>
+            </div>
+          </article>
+      </div>
+  
+      <!-- CTA -->
+      <div class="cta-wrap">
+        <a href="#todos-los-productos" class="cta-btn">Ver Todos los Productos</a>
+      </div>
+    </div>
+  </section>
+  
+    <!-- Section 2 End --> 
+
+     <!-- Section3  start -->
+     
+     <section class="smart-sales">
+        <div class="container">
+          <!-- Left Panel -->
+          <div class="left-panel">
+            <span class="label">Tecnología AI Próximamente</span>
+            <h2 class="title">Venta <span class="highlight1">Inteligente</span> </h2>
+            <p class="subtitle">
+              Recomendaciones personalizadas basadas en tus preferencias, el clima actual y ocasiones especiales.
+            </p>
+      
+            <div class="recommendation">
+              <h3>Recomendación de Hoy:</h3>
+              <p>
+                Basado en el clima tropical y tus preferencias por bebidas refrescantes, te recomendamos un <strong>Ron Ligero de Verano</strong>.
+              </p>
+              <p>
+                Producto: <strong>Ron Barceló Gran Añejo</strong> – el equilibrio perfecto entre sabor y frescura.
+              </p>
+            </div>
+      
+            <ul class="features">
+              <li>Recomendaciones basadas en clima y ocasión</li>
+              <li>Historial de compras personalizado</li>
+              <li>Sugerencias para eventos especiales</li>
+            </ul>
+      
+            <button class="cta-btn">Descubre Más</button>
+          </div>
+      
+          <!-- Right Panel -->
+          <div class="right-panel">
+            <div class="image-wrap">
+              <img src="assetes/image/imge1.png" alt="Cliente explorando vinos" />
+              <span class="tag accuracy">98% Precisión</span>
+              <span class="tag recommendation">Recomendación Ron Premium</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+<!-- Section 3 End -->  
+ <!-- Section 4 start -->
+ <section class="best-products">
+    <div class="container">
+      <h2 class="section-title">Los Mejores Productos</h2>
+  
+      <div class="product-grid">
+        <article class="product-card1">
+          <img src="assetes/image/botol.png" alt="Ron Barceló Gran Añejo" />
+          <h3>Ron Barceló Gran Añejo</h3>
+          <p class="price">RDS 1,250</p>
+          <button class="add-btn">Añadir al carrito <i class="fa-solid fa-cart-plus"></i></button>
+        </article>
+  
+        <article class="product-card1">
+          <img src="assetes/image/image5.png" alt="Johnnie Walker Black Label" />
+          <h3>Johnnie Walker Black Label</h3>
+          <p class="price">RDS 2,950</p>
+          <button class="add-btn">Añadir al carrito <i class="fa-solid fa-cart-plus"></i></button>
+        </article>
+  
+        <article class="product-card1">
+          <img src="assetes/image/image8.png" alt="Colección Vodka Premium" />
+          <h3>Colección Vodka Premium</h3>
+          <p class="price">RDS 3,200</p>
+          <button class="add-btn">Añadir al carrito <i class="fa-solid fa-cart-plus"></i></button>
+        </article>
+  
+        <article class="product-card1">
+          <img src="assetes/image/imge9.png" alt="Tequila Don Julio Blanco" />
+          <h3>Tequila Don Julio Blanco</h3>
+          <p class="price">RDS 3,500</p>
+          <button class="add-btn">Añadir al carrito <i class="fa-solid fa-cart-plus"></i></button>
+        </article>
+  
+        <article class="product-card1">
+          <img src="assetes/image/image3.png" alt="Whisky Colección de Lujo" />
+          <h3>Whisky Colección de Lujo</h3>
+          <p class="price">RDS 4,500</p>
+          <button class="add-btn">Añadir al carrito <i class="fa-solid fa-cart-plus"></i></button>
+        </article>
+  
+        <article class="product-card1">
+          <img src="assetes/image/imag2.png" alt="Mix de Bebidas Premium" />
+          <h3>Mix de Bebidas Premium</h3>
+          <p class="price">RDS 1,450</p>
+          <button class="add-btn">Añadir al carrito <i class="fa-solid fa-cart-plus"></i></button>
+        </article>
+      </div>
+  
+      <div class="cta-wrap">
+        <a href="#todos-productos" class="cta-btn">Ver Todos los Productos</a>
+      </div>
+    </div>
+  </section>
+  
+  
+<!-- Section 5 start -->  
+<section class="special-offers">
+    <div class="container">
+      <header style="padding-bottom:20px ;" class="offers-header">
+        <h2 style="text-align:center ; font-size: 38px;">🔥 Ofertas Especiales - <span class="highlight">Ofertas de la Semana</span>     </h2>
+        <p style="text-align:center ;">Aprovecha hasta 30% de descuento en productos seleccionados</p>
+      </header>
+  
+      <div class="offer-card">
+        <div class="offer-content">
+          <span class="limited">Oferta por Tiempo Limitado</span>
+          <h3>Ron Barceló Imperial</h3>
+          <p class="description">
+            El ron dominicano por excelencia, ahora con descuento especial
+          </p>
+          <p class="price">
+            <span class="old-price">RD$ 2,500</span>
+            <span class="new-price">RDS 1,750</span>
+          </p>
+          <button class="buy-btn">Comprar Ahora <i class="fa-solid fa-cart-plus"></i> </button>
+        </div>
+  
+        <div class="offer-image">
+          <img src="assetes/image/img1.png" alt="Ron Barceló Imperial" />
+        </div>
+      </div>
+  
+      <footer class="offers-footer">
+        <p>Ofertas Válidas Esta Semana</p>
+        <a href="#todas-ofertas" class="cta-btn">Ver Todas las Ofertas</a>
+      </footer>
+    </div>
+  </section>
+  
+<!-- Section 5 End -->  
+<!-- Section 6 Start --> 
+<section class="choose-dagon">
+    <div class="container">
+      <header class="section-header">
+
+        <h2>¿Por Qué Elegir Dagon Almacén?</h2>
+        <p>Más que una tienda de licores, somos tu destino de confianza para las mejores bebidas</p>
+      </header>
+  
+      <div class="features-grid">
+        <div class="feature">
+          <i class="fa-solid fa-truck"></i>
+          <h3>Entrega Rápida</h3>
+          <p>Envíos rápidos y eficientes para que disfrutes de tus productos sin demoras en toda República Dominicana.</p>
+        </div>
+        <div class="feature">
+          <i class="fa-solid fa-snowflake"></i>
+          <h3>100% Auténtico</h3>
+          <p>Todos nuestros productos son originales y de calidad garantizada. Sin imitaciones ni adulteraciones.</p>
+        </div>
+        <div class="feature">
+          <i class="fa-solid fa-tags"></i>
+          <h3>Mejores Precios</h3>
+          <p>Precios competitivos y promociones exclusivas. Ahorra más en cada compra.</p>
+        </div>
+        <div class="feature">
+          <i class="fa-solid fa-wine-bottle"></i>
+          <h3>Amplia Selección</h3>
+          <p>Más de 5000 productos disponibles. Desde licores premium hasta opciones económicas.</p>
+        </div>
+        <div class="feature">
+          <i class="fa-solid fa-headset"></i>
+          <h3>Soporte 24/7</h3>
+          <p>Atención al cliente disponible para ayudarte en cualquier momento, todos los días.</p>
+        </div>
+        <div class="feature">
+          <i class="fa-solid fa-calendar-check"></i>
+          <h3>Pago Seguro</h3>
+          <p>Transacciones protegidas con tecnología avanzada. Compra con confianza.</p>
+        </div>
+      </div>
+  
+      <div class="stats-grid">
+        <div class="stat">
+          <span class="number">5000+</span>
+          <p>Productos Dagon Bebs</p>
+        </div>
+        <div class="stat">
+          <span class="number">10K+</span>
+          <p>Clientes Satisfechos</p>
+        </div>
+        <div class="stat">
+          <span class="number">24/7</span>
+          <p>Atención al Cliente</p>
+        </div>
+        <div class="stat">
+          <span class="number">100%</span>
+          <p>Productos Auténticos</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!-- Section 6 End -->  
+<!-- Section 7 Start -->  
+<footer class="footer">
+    <div class="container">
+      <!-- Top area -->
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assetes/image/Logo.png" alt="">
+          <!-- <h2>DAGON Almacén del Este</h2> -->
+          <p class="slogan">
+            Tu destino de confianza para los mejores licores del Caribe y del mundo. 
+            Calidad garantizada en cada botella.
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+  
+        <div class="footer-links">
+          <h3>Enlaces Rápidos</h3>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Venta Inteligente</a></li>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-contact">
+          <h3>Contáctanos</h3>
+          <p>Santo Domingo Este, República Dominicana</p>
+          <p>Tel: +1 (809) 594-0723</p>
+          <p>Email: info@dagonalmacene.com</p>
+          <p>Horario:</p>
+          <p>Lun–Sáb: 9:00 AM – 8:00 PM</p>
+          <p>Dom: 10:00 AM – 6:00 PM</p>
+        </div>
+  
+        <div class="footer-payment">
+          <h3>Métodos de Pago</h3>
+          <div class="payment-icons">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="MasterCard" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" />
+          </div>
+          <p>Aceptamos múltiples formas de pago seguras</p>
+          <p><strong>100% Seguras</strong></p>
+        </div>
+      </div>
+  
+      <!-- Bottom area -->
+      <div class="footer-bottom">
+        <p>© 2025 Dagon Almacén del Este — Todos los derechos reservados.</p>
+        <div class="legal-links">
+          <a href="#">Política de Privacidad</a> | 
+          <a href="#">Términos y Condiciones</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+<!-- Section 7 End -->  
+<!-- Section 4 End -->  
+
+
+    <script src="assetes/script.js"></script>
+
+
+
+  <script>
+    // Header transparency on scroll (sticky already set)
+    const header = document.getElementById('header');
+    const onScroll = () => {
+      if (window.scrollY > 8) header.classList.add('scrolled');
+      else header.classList.remove('scrolled');
+    };
+    document.addEventListener('scroll', onScroll);
+    onScroll();
+
+    // Mobile menu open/close
+    const hamburger = document.getElementById('hamburger');
+    const closeX = document.getElementById('closeX');
+    const mobilePanel = document.getElementById('mobilePanel');
+
+    function openMenu(){
+      mobilePanel.classList.add('open');
+      closeX.classList.add('open');
+      hamburger.style.display = 'none';
+      // prevent body scroll behind panel
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMenu(){
+      mobilePanel.classList.remove('open');
+      closeX.classList.remove('open');
+      hamburger.style.display = 'flex';
+      document.body.style.overflow = '';
+    }
+    hamburger.addEventListener('click', openMenu);
+    closeX.addEventListener('click', closeMenu);
+
+    // Close mobile menu if viewport returns to desktop
+    const mq = window.matchMedia('(min-width: 861px)');
+    function handleMQ(e){ if(e.matches) closeMenu(); }
+    mq.addEventListener('change', handleMQ);
+
+    // Basic form submission (no backend) + small UX
+    const form = document.querySelector('.hero-form');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(form).entries());
+      alert('Gracias por tu consulta, ' + (data.name || 'cliente') + '. ¡Te contactaremos pronto!');
+      form.reset();
+    });
+
+    // Keyboard ESC to close mobile panel
+    document.addEventListener('keydown', (e) => {
+      if(e.key === 'Escape' && mobilePanel.classList.contains('open')) closeMenu();
+    });
+  </script>
+
+   
+</body>
+</html>
